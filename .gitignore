@@ -1,4 +1,4 @@
-﻿# Byte-compiled / optimized / DLL files
+# Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
 *.class
@@ -42,6 +42,8 @@ data/raw/*
 !data/raw/.gitkeep
 data/clean/*
 !data/clean/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
 data/graph/*.graphml
 data/graph/*.csv
 !data/graph/.gitkeep
