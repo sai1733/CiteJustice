@@ -28,38 +28,50 @@ URLS = {
     "multi_dev.parquet": "https://huggingface.co/datasets/Exploration-Lab/IL-TUR/resolve/main/cjpe/multi_dev-00000-of-00001.parquet",
 }
 
-def download_file(url, filename, headers):
+def download_file(url, filename, headers, max_retries=5):
+    import time
     dest_path = os.path.join(DEST_DIR, filename)
     if os.path.exists(dest_path) and os.path.getsize(dest_path) > 1000:
         print(f"[OK] {filename} already exists ({os.path.getsize(dest_path):,} bytes).")
         return dest_path
         
-    print(f"Connecting to download {filename}...")
-    try:
-        response = requests.get(url, headers=headers, stream=True, timeout=30)
-    except Exception as e:
-        print(f"Network error connecting to {url}: {e}")
-        sys.exit(1)
-        
-    if response.status_code == 401:
-        print("Error: 401 Unauthorized. Please provide a valid Hugging Face token authorized for Exploration-Lab/IL-TUR!")
-        sys.exit(1)
-    elif response.status_code != 200:
-        print(f"Error downloading {filename}: HTTP status {response.status_code}")
-        sys.exit(1)
-        
-    total_size = int(response.headers.get('content-length', 0))
-    block_size = 1024 * 1024  # 1MB chunks
-    
-    with open(dest_path, 'wb') as f:
-        with tqdm(total=total_size, unit='B', unit_scale=True, desc=filename) as pbar:
-            for chunk in response.iter_content(chunk_size=block_size):
-                if chunk:
-                    f.write(chunk)
-                    pbar.update(len(chunk))
-                    
-    print(f"[OK] Downloaded {filename} successfully!\n")
-    return dest_path
+    for attempt in range(1, max_retries + 1):
+        print(f"Connecting to download {filename} (Attempt {attempt}/{max_retries})...")
+        try:
+            response = requests.get(url, headers=headers, stream=True, timeout=60)
+            if response.status_code == 401:
+                print("Error: 401 Unauthorized. Please provide a valid Hugging Face token authorized for Exploration-Lab/IL-TUR!")
+                sys.exit(1)
+            elif response.status_code != 200:
+                print(f"Error downloading {filename}: HTTP status {response.status_code}")
+                time.sleep(5)
+                continue
+                
+            total_size = int(response.headers.get('content-length', 0))
+            block_size = 1024 * 1024  # 1MB chunks
+            
+            temp_dest = dest_path + ".tmp"
+            with open(temp_dest, 'wb') as f:
+                with tqdm(total=total_size, unit='B', unit_scale=True, desc=filename) as pbar:
+                    for chunk in response.iter_content(chunk_size=block_size):
+                        if chunk:
+                            f.write(chunk)
+                            pbar.update(len(chunk))
+                            
+            if os.path.exists(dest_path):
+                os.remove(dest_path)
+            os.rename(temp_dest, dest_path)
+            print(f"[OK] Downloaded {filename} successfully!\n")
+            return dest_path
+        except Exception as e:
+            print(f"Network error during attempt {attempt}: {e}")
+            if attempt < max_retries:
+                wait_time = 5 * attempt
+                print(f"Retrying in {wait_time} seconds...")
+                time.sleep(wait_time)
+            else:
+                print(f"Failed to download {filename} after {max_retries} attempts.")
+                sys.exit(1)
 
 def main():
     parser = argparse.ArgumentParser(description="Download ILDC dataset")
