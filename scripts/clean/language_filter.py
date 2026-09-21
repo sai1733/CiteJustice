@@ -59,12 +59,12 @@ def detect_case_language(text: str) -> tuple[str, float, bool]:
         # Sample slices from head, middle, and tail to catch mixed language excerpts
         text_len = len(text)
         samples = []
-        samples.append(text[:1500])
-        if text_len > 3000:
+        samples.append(text[:400])
+        if text_len > 1000:
             mid = text_len // 2
-            samples.append(text[mid:mid + 1500])
-        if text_len > 6000:
-            samples.append(text[-1500:])
+            samples.append(text[mid:mid + 400])
+        if text_len > 2500:
+            samples.append(text[-400:])
 
         all_detected = []
         for s in samples:
