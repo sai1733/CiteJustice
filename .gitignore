@@ -46,6 +46,8 @@ data/processed/*
 !data/processed/.gitkeep
 data/graph/*.graphml
 data/graph/*.csv
+data/graph/*.json
+!data/graph/resolution_stats.json
 !data/graph/.gitkeep
 data/splits/*
 !data/splits/.gitkeep
