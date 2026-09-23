@@ -29,35 +29,35 @@ The Week 3 pipeline transforms the cleaned and segmented JSON Lines data from We
 
 ```mermaid
 flowchart TD
-    subgraph Input Data (Week 2 Artifacts)
+    subgraph S1 ["Input Data - Week 2 Artifacts"]
         A1["data/clean/ildc_single_segmented.jsonl<br>(9,110 cases)"]
         A2["data/clean/ildc_multi_segmented.jsonl<br>(34,813 cases)"]
     end
 
-    subgraph Task 1: Context Windowing
-        B1["scripts/graph/extract_citations.py<br>• Regex span extraction (SCC, AIR, SCR, SCALE)<br>• Dual window slicing: ±50 & ±250 words<br>• Rhetorical zone binding (Facts, Submissions, Ratio)"]
+    subgraph S2 ["Task 1: Context Windowing"]
+        B1["scripts/graph/extract_citations.py<br>• Regex span extraction (SCC, AIR, SCR, SCALE)<br>• Dual window slicing: ±50 and ±250 words<br>• Rhetorical zone binding (Facts, Submissions, Ratio)"]
         A1 --> B1
         A2 --> B1
         B2["data/clean/ildc_*_citation_contexts.jsonl<br>(92,058 candidate citation edges)"]
         B1 --> B2
     end
 
-    subgraph Task 2: Relationship Classification
-        C1["scripts/graph/classify_relationship.py<br>• Priority: OVERRULED ≻ DISTINGUISHED ≻ FOLLOWED ≻ CONSIDERED<br>• Negation & OCR artifact guards<br>• Calibrated confidence scoring & zone modulation"]
+    subgraph S3 ["Task 2: Relationship Classification"]
+        C1["scripts/graph/classify_relationship.py<br>• Priority: OVERRULED > DISTINGUISHED > FOLLOWED > CONSIDERED<br>• Negation and OCR artifact guards<br>• Calibrated confidence scoring and zone modulation"]
         B2 --> C1
         C2["data/clean/ildc_*_classified_edges.jsonl<br>(7,234 strong treatment edges + 84,824 considered)"]
         C1 --> C2
     end
 
-    subgraph Task 3: Citation Resolution & Edge Export
+    subgraph S4 ["Task 3: Citation Resolution and Edge Export"]
         D1["scripts/graph/build_edge_list.py<br>• Resolve citation spans to internal case IDs<br>• 40.02% internal resolution rate<br>• Master edge list compilation"]
         C2 --> D1
         D2["data/graph/citations.csv (24.8 MB)<br>data/graph/citation_to_case_id.json"]
         D1 --> D2
     end
 
-    subgraph Task 4: DPEG Mathematical Assembly
-        E1["scripts/graph/build_dpeg.py<br>• Dual node indexing (Internal + External)<br>• Signed edge weights: W = base_weight × confidence<br>• Temporal era slicing (1950-1975, 1976-2000, 2001-2020)"]
+    subgraph S5 ["Task 4: DPEG Mathematical Assembly"]
+        E1["scripts/graph/build_dpeg.py<br>• Dual node indexing (Internal + External)<br>• Signed edge weights: W = base_weight x confidence<br>• Temporal era slicing (1950-1975, 1976-2000, 2001-2020)"]
         C2 --> E1
         E2["data/clean/dpeg/dpeg_combined_nodes.csv (64,660 nodes)<br>data/clean/dpeg/dpeg_combined_edges.csv (92,058 edges)<br>data/clean/dpeg/dpeg_combined_edge_list.tsv (GNN input)<br>data/clean/dpeg/dpeg_combined_stats.json"]
         E1 --> E2
