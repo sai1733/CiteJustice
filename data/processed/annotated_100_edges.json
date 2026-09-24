@@ -1,0 +1,938 @@
+{
+  "metrics": {
+    "OVERRULED": {
+      "TP": 14,
+      "FP": 1,
+      "FN": 0,
+      "Precision": 0.9333333333333333,
+      "Recall": 1.0,
+      "F1": 0.9655172413793104
+    },
+    "DISTINGUISHED": {
+      "TP": 24,
+      "FP": 6,
+      "FN": 0,
+      "Precision": 0.8,
+      "Recall": 1.0,
+      "F1": 0.888888888888889
+    },
+    "FOLLOWED": {
+      "TP": 29,
+      "FP": 1,
+      "FN": 0,
+      "Precision": 0.9666666666666667,
+      "Recall": 1.0,
+      "F1": 0.983050847457627
+    },
+    "CONSIDERED": {
+      "TP": 25,
+      "FP": 0,
+      "FN": 8,
+      "Precision": 1.0,
+      "Recall": 0.7575757575757576,
+      "F1": 0.8620689655172413
+    }
+  },
+  "validated": [
+    {
+      "id": 1,
+      "case_id": "2014_170",
+      "citation": "1997  5 SCC 201",
+      "pred": "OVERRULED",
+      "ground_truth": "OVERRULED",
+      "is_correct": true,
+      "snippet": "report was, however, made prospective so that numberpunishment already imposed upon a delinquent employee would be open to challenge on that account. In Ashok"
+    },
+    {
+      "id": 2,
+      "case_id": "2014_170",
+      "citation": "1973  4 SCC 225",
+      "pred": "OVERRULED",
+      "ground_truth": "OVERRULED",
+      "is_correct": true,
+      "snippet": "d that although Golak Naths case regarding unamendabiltiy of fundamental rights under Article 368 of the Constitution had been overruled in Kesavananda Bharati"
+    },
+    {
+      "id": 3,
+      "case_id": "1947_378",
+      "citation": "1997  5 SCC 201",
+      "pred": "OVERRULED",
+      "ground_truth": "OVERRULED",
+      "is_correct": true,
+      "snippet": "report was, however, made prospective so that numberpunishment already imposed upon a delinquent employee would be open to challenge on that account. In Ashok"
+    },
+    {
+      "id": 4,
+      "case_id": "1947_378",
+      "citation": "1973  4 SCC 225",
+      "pred": "OVERRULED",
+      "ground_truth": "OVERRULED",
+      "is_correct": true,
+      "snippet": "d that although Golak Naths case regarding unamendabiltiy of fundamental rights under Article 368 of the Constitution had been overruled in Kesavananda Bharati"
+    },
+    {
+      "id": 5,
+      "case_id": "1966_154",
+      "citation": "A.I.R. 1959 S.C. 433",
+      "pred": "OVERRULED",
+      "ground_truth": "OVERRULED",
+      "is_correct": true,
+      "snippet": "1889, if the offence of infringement of a trade or property mark is a companytinuing one, and if numberdiscontinuance is proved, time runs from the first I.L.R"
+    },
+    {
+      "id": 6,
+      "case_id": "1960_211",
+      "citation": "1953 S.C.R. 1144",
+      "pred": "OVERRULED",
+      "ground_truth": "OVERRULED",
+      "is_correct": true,
+      "snippet": "peal to this Court and challenged the jurisdiction of the Madras High Court to issue the writ it had purported to do. This Court overruled the companytention on"
+    },
+    {
+      "id": 7,
+      "case_id": "1974_115",
+      "citation": "1954 S.C.R. 30",
+      "pred": "OVERRULED",
+      "ground_truth": "CONSIDERED",
+      "is_correct": false,
+      "snippet": "dure and the impugned provisions do number suffer from the vice of discrimination. 49 C50 F Kathti Raning Rawat v. The State of Saurashtra, 1952 C.R. 435, Ketla"
+    },
+    {
+      "id": 8,
+      "case_id": "1974_115",
+      "citation": "1955 2 S.C.R. 1196",
+      "pred": "OVERRULED",
+      "ground_truth": "OVERRULED",
+      "is_correct": true,
+      "snippet": "ination. 49 C50 F Kathti Raning Rawat v. The State of Saurashtra, 1952 C.R. 435, Ketlar Nath Bajoria v. State of West Bengal, 1954 S.C.R. 30, and A. Thangal Kun"
+    },
+    {
+      "id": 9,
+      "case_id": "1974_306",
+      "citation": "1957 S.C.R. 295",
+      "pred": "OVERRULED",
+      "ground_truth": "OVERRULED",
+      "is_correct": true,
+      "snippet": "s case  supra  cannot be said to have overruled Bharuchas case  supra . There is an earlier decision of this Court in State of Assam A. N. Kidwai, Commissioner"
+    },
+    {
+      "id": 10,
+      "case_id": "1974_426",
+      "citation": "1961 1 S.C.R. 809",
+      "pred": "OVERRULED",
+      "ground_truth": "OVERRULED",
+      "is_correct": true,
+      "snippet": "dismissed the appeals. The case practically overruled the decision in Atiabari Case 17 , insofar as it held that if a state legislature wanted to impose tax to"
+    },
+    {
+      "id": 11,
+      "case_id": "1974_426",
+      "citation": "1963 1 S.C.R. 491",
+      "pred": "OVERRULED",
+      "ground_truth": "OVERRULED",
+      "is_correct": true,
+      "snippet": "The case practically overruled the decision in Atiabari Case 17 , insofar as it held that if a state legislature wanted to impose tax to raise moneys necessary"
+    },
+    {
+      "id": 12,
+      "case_id": "1967_8",
+      "citation": "1952 S.C.R 89",
+      "pred": "OVERRULED",
+      "ground_truth": "OVERRULED",
+      "is_correct": true,
+      "snippet": "fair amount of unanimity amongst its members that a revision of the said view is fully justified. These principles were applied in Sajjan Singhs case and it was"
+    },
+    {
+      "id": 13,
+      "case_id": "1967_8",
+      "citation": "1952 S.C.R. 89",
+      "pred": "OVERRULED",
+      "ground_truth": "OVERRULED",
+      "is_correct": true,
+      "snippet": "be rendered invalid and a large number of decisions dealing with the validity of the acts included in the 9th Schedule which were pronounced by this Court ever"
+    },
+    {
+      "id": 14,
+      "case_id": "1967_8",
+      "citation": "1952 S.C.R. 89",
+      "pred": "OVERRULED",
+      "ground_truth": "OVERRULED",
+      "is_correct": true,
+      "snippet": "9  case was declared, would also have to be overruled. It was also pointed out that Parliament, the Government and the people have acted on the faith of the dec"
+    },
+    {
+      "id": 15,
+      "case_id": "1967_332",
+      "citation": "1952 S.C.R. 89",
+      "pred": "OVERRULED",
+      "ground_truth": "OVERRULED",
+      "is_correct": true,
+      "snippet": "ion, the fact that another Bench is inclined to take a different-view may number justify the Court in reconsidering the earlier decision or in departing from, i"
+    },
+    {
+      "id": 16,
+      "case_id": "1976_257",
+      "citation": "1963 3 S.C.R. 716",
+      "pred": "DISTINGUISHED",
+      "ground_truth": "DISTINGUISHED",
+      "is_correct": true,
+      "snippet": "out companyplying with the provisions of Article 311  2  of the Constitution is clearly distinguishable. In that case, the order of termination of the A.I.R. 19"
+    },
+    {
+      "id": 17,
+      "case_id": "1964_144",
+      "citation": "1951 2 S.C.R. 636",
+      "pred": "DISTINGUISHED",
+      "ground_truth": "DISTINGUISHED",
+      "is_correct": true,
+      "snippet": "tivity to a validating law and that since the legislature has -validated he amendment to the proviso as from April,- 1950, the amendment is valid and took effec"
+    },
+    {
+      "id": 18,
+      "case_id": "1951_26",
+      "citation": "1950 S.C.R. 88",
+      "pred": "DISTINGUISHED",
+      "ground_truth": "DISTINGUISHED",
+      "is_correct": true,
+      "snippet": "ewspaper ever companyld be. This distinction appeared to the learned Judge to be illogical, and he thought that there was an apparent companyflict between the d"
+    },
+    {
+      "id": 19,
+      "case_id": "1974_14",
+      "citation": "1954  S.C.R. 873",
+      "pred": "DISTINGUISHED",
+      "ground_truth": "DISTINGUISHED",
+      "is_correct": true,
+      "snippet": "hat companytained in clause 7 reproduced above is number violative of article 14 of the Constitution and that in matters relating to companytracts with the Gove"
+    },
+    {
+      "id": 20,
+      "case_id": "1962_81",
+      "citation": "1961 2 S.C.R. 276",
+      "pred": "DISTINGUISHED",
+      "ground_truth": "DISTINGUISHED",
+      "is_correct": true,
+      "snippet": "ere even though the actual physical delivery of goods was made at a Willingdon Island in the State of Tranvancore Cochin. The fiction created by the Explanation"
+    },
+    {
+      "id": 21,
+      "case_id": "1960_234",
+      "citation": "A.I.R. 1955 S.C. 352",
+      "pred": "DISTINGUISHED",
+      "ground_truth": "CONSIDERED",
+      "is_correct": false,
+      "snippet": "ises is whether these Kalambandis were regulations having the force of law at the material time. In support of the companyclusion that they are merely administr"
+    },
+    {
+      "id": 22,
+      "case_id": "1963_93",
+      "citation": "1955 1 S.C.R. 707",
+      "pred": "DISTINGUISHED",
+      "ground_truth": "DISTINGUISHED",
+      "is_correct": true,
+      "snippet": "reasonable for the pupose for which they are enacted. Presumption is, therefore, in favour of the companystitutionality of an enactment Hamdard Dawakhana  Wakf"
+    },
+    {
+      "id": 23,
+      "case_id": "1959_177",
+      "citation": "1954 S.C.R. 1055",
+      "pred": "DISTINGUISHED",
+      "ground_truth": "DISTINGUISHED",
+      "is_correct": true,
+      "snippet": "h fee, number exceeding five per centum of its net income in the last preceding financial year, as the Board may, from time to time, with the previous sanction"
+    },
+    {
+      "id": 24,
+      "case_id": "1969_121",
+      "citation": "1962 2 S.C.R. 711",
+      "pred": "DISTINGUISHED",
+      "ground_truth": "CONSIDERED",
+      "is_correct": false,
+      "snippet": "reference by the Court to certain awards made by tribunals where simple misconduct was distinguished from grave misconduct and forfeiture of gratuity  1 1967 2"
+    },
+    {
+      "id": 25,
+      "case_id": "1961_278",
+      "citation": "1960 3 S.C.R. 513",
+      "pred": "DISTINGUISHED",
+      "ground_truth": "DISTINGUISHED",
+      "is_correct": true,
+      "snippet": "d be benefited companycurrently and in the same proportion. It was held that s. 41 1  was inapplicable and the assessee should, therefore, be taxed on the basis"
+    },
+    {
+      "id": 26,
+      "case_id": "1968_322",
+      "citation": "1962 1 S.C.R. 676",
+      "pred": "DISTINGUISHED",
+      "ground_truth": "CONSIDERED",
+      "is_correct": false,
+      "snippet": "be companymunicated, and that this was an essential requirement of fair play and natural justice. The Court was companysidering a question of limitation Which"
+    },
+    {
+      "id": 27,
+      "case_id": "1973_221",
+      "citation": "1968  1 SCR 111",
+      "pred": "DISTINGUISHED",
+      "ground_truth": "DISTINGUISHED",
+      "is_correct": true,
+      "snippet": "20.  2  1967  3  SCR 430.  3  1967  2  SCR 625.  4  1965   3  SCR 218.  5  1965 Suppl  3  SCR 36.  6  1960  2  SCR 775.  7  1970  1  SCR 457.  8  1966 2  LLJ 22"
+    },
+    {
+      "id": 28,
+      "case_id": "1958_75",
+      "citation": "1955 2 S.C.R. 919",
+      "pred": "DISTINGUISHED",
+      "ground_truth": "DISTINGUISHED",
+      "is_correct": true,
+      "snippet": "at is the difference between standing timber and a tree ? It is clear that there must be a distinction because the Transfer of Property Act draws one in the def"
+    },
+    {
+      "id": 29,
+      "case_id": "1982_117",
+      "citation": "1976 1 S.C.R. 505",
+      "pred": "DISTINGUISHED",
+      "ground_truth": "DISTINGUISHED",
+      "is_correct": true,
+      "snippet": "ssarily carry on the administrative functions from the principal seat but it may have more than one seat for transaction of judicial business.673 A-G Nasiruddin"
+    },
+    {
+      "id": 30,
+      "case_id": "1978_132",
+      "citation": "1973 1 S.C.R. 697",
+      "pred": "DISTINGUISHED",
+      "ground_truth": "DISTINGUISHED",
+      "is_correct": true,
+      "snippet": "cision. And if the High Court is satisfied that there is numbererror in regard to any of these three matters, it has numberpower to interfere merely because it"
+    },
+    {
+      "id": 31,
+      "case_id": "1960_211",
+      "citation": "1954 S.C.R. 738",
+      "pred": "DISTINGUISHED",
+      "ground_truth": "DISTINGUISHED",
+      "is_correct": true,
+      "snippet": "ce this appeal. The matter was first heard by a Bench of five judges. in the companyrse of hearing it became clear to us that the appellant number only sought t"
+    },
+    {
+      "id": 32,
+      "case_id": "1960_234",
+      "citation": "1955 1 S.C.R. 735",
+      "pred": "DISTINGUISHED",
+      "ground_truth": "CONSIDERED",
+      "is_correct": false,
+      "snippet": "having the force of law at the material time. In support of the companyclusion that they are merely administrative orders it is urged by the learned A.I.R. 1955"
+    },
+    {
+      "id": 33,
+      "case_id": "1967_218",
+      "citation": "1953 S.C.R. 302",
+      "pred": "DISTINGUISHED",
+      "ground_truth": "DISTINGUISHED",
+      "is_correct": true,
+      "snippet": ". 302.  2  26 C.L.R. 508.  3  1957 1 L.L.J. 8. the ground that the bonus formula was inapplicable. The Court, however, went on to observe It is number finally s"
+    },
+    {
+      "id": 34,
+      "case_id": "1968_288",
+      "citation": "1954 S.C.R. 310",
+      "pred": "DISTINGUISHED",
+      "ground_truth": "CONSIDERED",
+      "is_correct": false,
+      "snippet": "ty Act. There is a clear distinction between a companypleted companyveyance and an executory companytract, and events which discharge a companytract do number i"
+    },
+    {
+      "id": 35,
+      "case_id": "1960_133",
+      "citation": "1958 S.C.R. 308",
+      "pred": "DISTINGUISHED",
+      "ground_truth": "CONSIDERED",
+      "is_correct": false,
+      "snippet": "er understand the observations of the Chief Justice to mean that any remote or fanciful companynection between the impugned Act and the public order  1  1957 S."
+    },
+    {
+      "id": 36,
+      "case_id": "1973_221",
+      "citation": "AIR 1973 SC 1138",
+      "pred": "DISTINGUISHED",
+      "ground_truth": "DISTINGUISHED",
+      "is_correct": true,
+      "snippet": "65   3  SCR 218.  5  1965 Suppl  3  SCR 36.  6  1960  2  SCR 775.  7  1970  1  SCR 457.  8  1966 2  LLJ 221.  9  1971  1  Weekly Law Reports  10  1968  1 SCR 11"
+    },
+    {
+      "id": 37,
+      "case_id": "1982_79",
+      "citation": "1977 1 S.C.R. 1037",
+      "pred": "DISTINGUISHED",
+      "ground_truth": "DISTINGUISHED",
+      "is_correct": true,
+      "snippet": "seniority as against direct recruits who may turn up in succeeding periods. 726 Bishan Sarup Gupta v. Union of India Ors., 1975 1 C.R. 104 held inapplicable N.K"
+    },
+    {
+      "id": 38,
+      "case_id": "1971_82",
+      "citation": "1970 1 S.C.R 457",
+      "pred": "DISTINGUISHED",
+      "ground_truth": "DISTINGUISHED",
+      "is_correct": true,
+      "snippet": "order there was passed before the expiry of the initial six months period. But the companytention raised was that an opportunity to be heard should have been g"
+    },
+    {
+      "id": 39,
+      "case_id": "1982_116",
+      "citation": "1977 2 S.C.R. 421",
+      "pred": "DISTINGUISHED",
+      "ground_truth": "DISTINGUISHED",
+      "is_correct": true,
+      "snippet": "ran Dass Duggal v. Brahma Nand  C.A. No. 179/82 decided on 11-1-1982  and Om Prakash Saluja v. Smt. Saraswati Devi  C.A. No. 527/82 decided on 8-2-1982 , referr"
+    },
+    {
+      "id": 40,
+      "case_id": "2019_890",
+      "citation": "2004  3 SCC 553",
+      "pred": "DISTINGUISHED",
+      "ground_truth": "DISTINGUISHED",
+      "is_correct": true,
+      "snippet": "case. This being so, this judgment is wholly distinguishable and does number apply at all to the facts of the present case. In ABL International Ltd. v. Export"
+    },
+    {
+      "id": 41,
+      "case_id": "1972_226",
+      "citation": "1970 2 S.C.R. 204",
+      "pred": "DISTINGUISHED",
+      "ground_truth": "DISTINGUISHED",
+      "is_correct": true,
+      "snippet": "by Section 52 of the Transfer of Property Act. AIR 1932 Madras 566. AIR 1929 Calcutta 697. AIR 1928 All. 3. AIR 1952 Nag. 341, AIR 1950 Madras 189. ILR 32 Calc"
+    },
+    {
+      "id": 42,
+      "case_id": "1973_43",
+      "citation": "1962 2 S.C.R. 321",
+      "pred": "DISTINGUISHED",
+      "ground_truth": "DISTINGUISHED",
+      "is_correct": true,
+      "snippet": "s, or with fine, extending to Rs. 250, or with both. On the face of its plain language this section is materially different from s. 9 of the Act. It therefore d"
+    },
+    {
+      "id": 43,
+      "case_id": "1961_214",
+      "citation": "1953 S.C.R. 1",
+      "pred": "DISTINGUISHED",
+      "ground_truth": "DISTINGUISHED",
+      "is_correct": true,
+      "snippet": "9 itself a distinction is made between the right of a Mukhtar to practise in civil companyrts and his right to appear, plead and act in any criminal. companyrt"
+    },
+    {
+      "id": 44,
+      "case_id": "1972_120",
+      "citation": "1960  3 S.C.R 590",
+      "pred": "DISTINGUISHED",
+      "ground_truth": "DISTINGUISHED",
+      "is_correct": true,
+      "snippet": "rt to dispose of the case. A party is number bound to appeal against every interlocutory order which is a step in the procedure that leads up to a final decisio"
+    },
+    {
+      "id": 45,
+      "case_id": "1968_271",
+      "citation": "1962 3 S.C.R. 338",
+      "pred": "DISTINGUISHED",
+      "ground_truth": "DISTINGUISHED",
+      "is_correct": true,
+      "snippet": "of goods on which numberduty had been paid and by imposing penalties and fines. In Raja Ram jaiswal v, State of Bihar 2  the decision in Barkat Raras case x  wa"
+    },
+    {
+      "id": 46,
+      "case_id": "1963_112",
+      "citation": "1961 2 S.C.R. 48",
+      "pred": "FOLLOWED",
+      "ground_truth": "FOLLOWED",
+      "is_correct": true,
+      "snippet": "te, it would follow that this Court by implication, has expressed its companycurrence with the companyclusion of Isaacsj. This argument is number A.I.R. 1960 S."
+    },
+    {
+      "id": 47,
+      "case_id": "1964_140",
+      "citation": "A.I.R. 1965 S.C. 183",
+      "pred": "FOLLOWED",
+      "ground_truth": "FOLLOWED",
+      "is_correct": true,
+      "snippet": "of the leaflets and pamphlets distributed by or on behalf of the appellant the election symbol of the Swatantra Party is described as the star Dhruva or the Pol"
+    },
+    {
+      "id": 48,
+      "case_id": "1961_18",
+      "citation": "1951 S.C.R. 344",
+      "pred": "FOLLOWED",
+      "ground_truth": "CONSIDERED",
+      "is_correct": false,
+      "snippet": "some of the earlier decisions of this Court where the presedt problem was posed but number finally or definitely answered. In Janardan Reddy v. The State of Hy"
+    },
+    {
+      "id": 49,
+      "case_id": "1966_32",
+      "citation": "1964 2 S.C.R. 165",
+      "pred": "FOLLOWED",
+      "ground_truth": "FOLLOWED",
+      "is_correct": true,
+      "snippet": "hat claim is based on s. 4 c  of the Act. The relevant part of the section is as follows-- The Commission shall have the power of a Civil Court. while trying a"
+    },
+    {
+      "id": 50,
+      "case_id": "1976_257",
+      "citation": "1953 S.CR 655",
+      "pred": "FOLLOWED",
+      "ground_truth": "FOLLOWED",
+      "is_correct": true,
+      "snippet": "er se number a punishment and does number attract the provi- sions of Art. 311. It does number, however, follow that, except in the three cases mentioned above."
+    },
+    {
+      "id": 51,
+      "case_id": "1963_112",
+      "citation": "1960 2 S.C.R. 866",
+      "pred": "FOLLOWED",
+      "ground_truth": "FOLLOWED",
+      "is_correct": true,
+      "snippet": "nted to an industrial dispute, it would follow that this Court by implication, has expressed its companycurrence with the companyclusion of Isaacsj. This argume"
+    },
+    {
+      "id": 52,
+      "case_id": "1958_95",
+      "citation": "1952 S.C.R. 597",
+      "pred": "FOLLOWED",
+      "ground_truth": "FOLLOWED",
+      "is_correct": true,
+      "snippet": "t alleged to have been infringed, the underlying purpose of the restrictions imposed, the extent and urgency of the evil sought to be remedied thereby, the disp"
+    },
+    {
+      "id": 53,
+      "case_id": "1958_45",
+      "citation": "1952 S.C.R. 572",
+      "pred": "FOLLOWED",
+      "ground_truth": "FOLLOWED",
+      "is_correct": true,
+      "snippet": "aw is that the decision would be illegal on any of the following three grounds, viz., Because the Act under which it was made was ultra vires See Mohammad Yasin"
+    },
+    {
+      "id": 54,
+      "case_id": "1960_337",
+      "citation": "1960 2 S.C.R. 130",
+      "pred": "FOLLOWED",
+      "ground_truth": "FOLLOWED",
+      "is_correct": true,
+      "snippet": "raised in the petitions, they are number pressed before us. Learned Advocate General for the State of Andhra Pradesh sought to sustain the schemes as approved"
+    },
+    {
+      "id": 55,
+      "case_id": "1958_59",
+      "citation": "1952 S.C.R. 544",
+      "pred": "FOLLOWED",
+      "ground_truth": "FOLLOWED",
+      "is_correct": true,
+      "snippet": "it, but it is certainly number the measure of the entire obligation was reiterated. And again at p. 183 Mukherjea J.  as he then was  said., It is a special li"
+    },
+    {
+      "id": 56,
+      "case_id": "1960_115",
+      "citation": "1955 2 S.C.R. 603",
+      "pred": "FOLLOWED",
+      "ground_truth": "FOLLOWED",
+      "is_correct": true,
+      "snippet": "decision in favour of the respondent-company on practically a single ground. Their reasoning was briefly as follows Following the Bengal Immunity case  1 , the"
+    },
+    {
+      "id": 57,
+      "case_id": "1982_0",
+      "citation": "A.I.R. 1972 S.C. 1826",
+      "pred": "FOLLOWED",
+      "ground_truth": "FOLLOWED",
+      "is_correct": true,
+      "snippet": "the decree even after the decree has been passed. Procedure is meant to advance the cause of justice and number to retard it. 112 G-H, 113 A Hungerford Investme"
+    },
+    {
+      "id": 58,
+      "case_id": "1963_178",
+      "citation": "1959 S.C.R. 8",
+      "pred": "FOLLOWED",
+      "ground_truth": "FOLLOWED",
+      "is_correct": true,
+      "snippet": "aw on the subject and laid down the propositions flowing from the discussion. The following propositions are relevant to the present enquiry  1  The right of pr"
+    },
+    {
+      "id": 59,
+      "case_id": "1967_157",
+      "citation": "1963 2 S.C.R. 747",
+      "pred": "FOLLOWED",
+      "ground_truth": "FOLLOWED",
+      "is_correct": true,
+      "snippet": "dment in 1955. Section 5 of the Madras Act provided that the companypensation payable to a licensee on whom an order had been served under s. 4 or whose  1  195"
+    },
+    {
+      "id": 60,
+      "case_id": "1964_120",
+      "citation": "1954 S.C.R. 289",
+      "pred": "FOLLOWED",
+      "ground_truth": "FOLLOWED",
+      "is_correct": true,
+      "snippet": "y deal with those in which companypanies limited by shares were companycerned for they stand on a slightly different footing from companypanies limited by guara"
+    },
+    {
+      "id": 61,
+      "case_id": "1977_284",
+      "citation": "1976 2 S.C.R. 347",
+      "pred": "FOLLOWED",
+      "ground_truth": "FOLLOWED",
+      "is_correct": true,
+      "snippet": "tutional scheme of elections in our system and the legislative follow-up regulating the process of election. Shri Justice Mathew in lndira Nehru Gandhi 1  summa"
+    },
+    {
+      "id": 62,
+      "case_id": "1953_65",
+      "citation": "1950 S.C.R. 88",
+      "pred": "FOLLOWED",
+      "ground_truth": "FOLLOWED",
+      "is_correct": true,
+      "snippet": "o  6  presuppose that the citizen to whom the possession of these fundamental rights is secured retains the substratum of personal freedom on which alone the en"
+    },
+    {
+      "id": 63,
+      "case_id": "1978_97",
+      "citation": "1954 S.C.R. 1077",
+      "pred": "FOLLOWED",
+      "ground_truth": "FOLLOWED",
+      "is_correct": true,
+      "snippet": "companycern over the, State v. individual balance. After tracing the English and American developments in the law against self-incrimination, Jagannadhadas, J."
+    },
+    {
+      "id": 64,
+      "case_id": "1972_528",
+      "citation": "1969 3 S.C.R. 548",
+      "pred": "FOLLOWED",
+      "ground_truth": "FOLLOWED",
+      "is_correct": true,
+      "snippet": "unishment should number be sustained if it was held that one of the two charges on the basis of which it was imposed was unsustainable. This was rejected follow"
+    },
+    {
+      "id": 65,
+      "case_id": "1967_8",
+      "citation": "1952 S.C.R. 89",
+      "pred": "FOLLOWED",
+      "ground_truth": "FOLLOWED",
+      "is_correct": true,
+      "snippet": "grarian sector which companystitutes the vast majority of the population in this companyntry. We are of opinion that there is force in this argument. Though the"
+    },
+    {
+      "id": 66,
+      "case_id": "1957_30",
+      "citation": "1953 S.C.R. 655",
+      "pred": "FOLLOWED",
+      "ground_truth": "FOLLOWED",
+      "is_correct": true,
+      "snippet": "uct is also present and even though that is the real reason for the action taken. But, if Government chooses to adopt such a companyrse, it must be careful to s"
+    },
+    {
+      "id": 67,
+      "case_id": "1960_296",
+      "citation": "1959 S.C.R. 690",
+      "pred": "FOLLOWED",
+      "ground_truth": "FOLLOWED",
+      "is_correct": true,
+      "snippet": "pted companymercial practice and trading principles it can be said to arise out of the carrying on of the business and to be incidental to it.,, That passage ha"
+    },
+    {
+      "id": 68,
+      "case_id": "1958_45",
+      "citation": "1950 S.C.R. 88",
+      "pred": "FOLLOWED",
+      "ground_truth": "FOLLOWED",
+      "is_correct": true,
+      "snippet": "being number the effect or result of legislation but its subject-matter. In support of his companytention he relied upon the following observations of Kania C.J"
+    },
+    {
+      "id": 69,
+      "case_id": "1967_8",
+      "citation": "1952 S.C.R. 89",
+      "pred": "FOLLOWED",
+      "ground_truth": "FOLLOWED",
+      "is_correct": true,
+      "snippet": "r to the following observations in Sajjan Singhs case ,  at pp. 947-48  with respect to over-ruling earlier judgments of this Court and specially those which ar"
+    },
+    {
+      "id": 70,
+      "case_id": "1964_140",
+      "citation": "1959 S.C.R. 1403",
+      "pred": "FOLLOWED",
+      "ground_truth": "FOLLOWED",
+      "is_correct": true,
+      "snippet": "grounds can be companyverted into a petition for special leave to appeal against the said finding, and the delay made in filing the same can be companydoned.  p"
+    },
+    {
+      "id": 71,
+      "case_id": "1969_24",
+      "citation": "A.I.R. 1968 S.C. 1064",
+      "pred": "FOLLOWED",
+      "ground_truth": "FOLLOWED",
+      "is_correct": true,
+      "snippet": "at. in the Legislature of a State unless he-  a is a citizen of India, and makes and sub- cribes before some person authorized in that behalf by the Election Co"
+    },
+    {
+      "id": 72,
+      "case_id": "1967_332",
+      "citation": "1952 1 S.C.R. 89",
+      "pred": "FOLLOWED",
+      "ground_truth": "FOLLOWED",
+      "is_correct": true,
+      "snippet": "nteenth Amendment  Act, 1964 to 64 and a so-called explanation which saved the application of the Proviso in Art. 31-A, was also added. The device approved by S"
+    },
+    {
+      "id": 73,
+      "case_id": "1960_180",
+      "citation": "1950 S.C.R. 621",
+      "pred": "FOLLOWED",
+      "ground_truth": "FOLLOWED",
+      "is_correct": true,
+      "snippet": "id down the following principles as deducible therefrom in Kushaldas S. Advanis case  1 at p. 725 - That, if a statute empowers an authority, number being a Cou"
+    },
+    {
+      "id": 74,
+      "case_id": "1967_8",
+      "citation": "1950 S.C.R. 88",
+      "pred": "FOLLOWED",
+      "ground_truth": "FOLLOWED",
+      "is_correct": true,
+      "snippet": "r have placed the fundamental rights beyond the reach of the amending power. Reliance is placed on the following passage in the judgment of Patanjali Sastri, J."
+    },
+    {
+      "id": 75,
+      "case_id": "1959_47",
+      "citation": "1957 S.C.R. 33",
+      "pred": "FOLLOWED",
+      "ground_truth": "FOLLOWED",
+      "is_correct": true,
+      "snippet": "ween three departments, the entire organizational activity would be an industry. This aspect of the question was incidentally touched upon by this Court in Baro"
+    },
+    {
+      "id": 76,
+      "case_id": "1965_188",
+      "citation": "1956 S.C.R. 664",
+      "pred": "CONSIDERED",
+      "ground_truth": "CONSIDERED",
+      "is_correct": true,
+      "snippet": "milling may without impropriety be used to denote some quarries. Dr. Johnson defines a quarry to be a stone mine. He arrived at the companyclusion that the wor"
+    },
+    {
+      "id": 77,
+      "case_id": "1958_106",
+      "citation": "1950 S.C.R. 621",
+      "pred": "CONSIDERED",
+      "ground_truth": "CONSIDERED",
+      "is_correct": true,
+      "snippet": "o as to be liable to be companyrected by a writ of certiorari. In Advanis case  1  Kania C. J. with A hom Patanjali Sastri J. agreed, said at page 632 The respo"
+    },
+    {
+      "id": 78,
+      "case_id": "1974_14",
+      "citation": "1972 2 S.C.C. 36",
+      "pred": "CONSIDERED",
+      "ground_truth": "CONSIDERED",
+      "is_correct": true,
+      "snippet": "d in section 22 either by auction or otherwise as it may by general or special order direct. That being the amplitude of the power of the Government, we fail to"
+    },
+    {
+      "id": 79,
+      "case_id": "1973_231",
+      "citation": "AIR 1963 SC 645",
+      "pred": "CONSIDERED",
+      "ground_truth": "CONSIDERED",
+      "is_correct": true,
+      "snippet": "akistan in 1951 it would be for the Central Government to decide whether he is a Pakistani national or an Indian citizen even though he may have companye to Ind"
+    },
+    {
+      "id": 80,
+      "case_id": "1961_25",
+      "citation": "1961 3 S.C.R. 135",
+      "pred": "CONSIDERED",
+      "ground_truth": "CONSIDERED",
+      "is_correct": true,
+      "snippet": "its turnover and the amount of tax payable thereon by the person companycerned. Furthermore, the order of the Commissioner under s. 8A is subject to revision by"
+    },
+    {
+      "id": 81,
+      "case_id": "1974_73",
+      "citation": "1955 2 S.C.R. 225",
+      "pred": "CONSIDERED",
+      "ground_truth": "CONSIDERED",
+      "is_correct": true,
+      "snippet": "erlaw which companyfers power on the State Government to prescribe text books, the State Government can by virtue of the need of the private schools for recogni"
+    },
+    {
+      "id": 82,
+      "case_id": "1961_322",
+      "citation": "1952 S.C.R. 435",
+      "pred": "CONSIDERED",
+      "ground_truth": "CONSIDERED",
+      "is_correct": true,
+      "snippet": "s power. It is number, however, essential for the legislation to companyply with the rule as to equal protection, that the rules for the guidance of the designa"
+    },
+    {
+      "id": 83,
+      "case_id": "1969_163",
+      "citation": "1967 2 S.C.R. 127",
+      "pred": "CONSIDERED",
+      "ground_truth": "CONSIDERED",
+      "is_correct": true,
+      "snippet": "these findings are in favour of the appellants, we cannot declare the election to be void under S. 100 1   d   ii  unless we reach the further companyclusion th"
+    },
+    {
+      "id": 84,
+      "case_id": "1972_425",
+      "citation": "1970 1 S.C.R. 115",
+      "pred": "CONSIDERED",
+      "ground_truth": "CONSIDERED",
+      "is_correct": true,
+      "snippet": "Telengana is companycerned. The whole history of the legislation, its object, title and the Preamble to it, point to that companyclusion. Further, the Constitu"
+    },
+    {
+      "id": 85,
+      "case_id": "1976_14",
+      "citation": "A.I.R. 1975 S.C. 1843",
+      "pred": "CONSIDERED",
+      "ground_truth": "CONSIDERED",
+      "is_correct": true,
+      "snippet": "to be a right accrued under the repealed law. We do number think that even by straining the language of the provision it can be said that the number-executabil"
+    },
+    {
+      "id": 86,
+      "case_id": "1967_332",
+      "citation": "1965 1 S.C.R. 933",
+      "pred": "CONSIDERED",
+      "ground_truth": "CONSIDERED",
+      "is_correct": true,
+      "snippet": "opal 3 , Dwarkadas Srinivas v. Sholapur Spinning Co.  4 . In State of I West Bengal v. Mrs. Bela Banerjee and Others 5 , this Court held a companypensation in A"
+    },
+    {
+      "id": 87,
+      "case_id": "1963_93",
+      "citation": "1963 1 S.C.R. 404",
+      "pred": "CONSIDERED",
+      "ground_truth": "CONSIDERED",
+      "is_correct": true,
+      "snippet": "il Nair v. The State of Kerala  4 . In that case, a careful examination of the scheme of the relevant provisions of the Travancore-Cochin  1 1963 1 S.C.R, 220."
+    },
+    {
+      "id": 88,
+      "case_id": "1967_347",
+      "citation": "1953 S.C.R. 1028",
+      "pred": "CONSIDERED",
+      "ground_truth": "CONSIDERED",
+      "is_correct": true,
+      "snippet": "d as against the decisions of designated persons and tribunals. See for example, Advocates Act, Trade Marks Act. Reference in this companynection may usefully b"
+    },
+    {
+      "id": 89,
+      "case_id": "1967_304",
+      "citation": "1964 1 S.C.R. 752",
+      "pred": "CONSIDERED",
+      "ground_truth": "CONSIDERED",
+      "is_correct": true,
+      "snippet": "t is to be decided before a tribunal of limited jurisdiction assumes jurisdiction and those cases where the tribunal has to decide the whole matter itself was r"
+    },
+    {
+      "id": 90,
+      "case_id": "1962_117",
+      "citation": "1954 S.C.R. 1005",
+      "pred": "CONSIDERED",
+      "ground_truth": "CONSIDERED",
+      "is_correct": true,
+      "snippet": "Commissioner, Hindu Religious Endowments, Madras v. Sri Lakshmindra Tirtha Swamiar of Sri Shirur Mutt  2  and Mahant Sri Jagannath Ramanuj Das v.The State of O"
+    },
+    {
+      "id": 91,
+      "case_id": "1972_120",
+      "citation": "1966 2 S.C.R. 498",
+      "pred": "CONSIDERED",
+      "ground_truth": "CONSIDERED",
+      "is_correct": true,
+      "snippet": "employment of all the employees and have the same certified by the Certifying Officer against whose orders an appeal lies to the appellate authority. The, righ"
+    },
+    {
+      "id": 92,
+      "case_id": "1965_233",
+      "citation": "1962 2 S.C.R. 169",
+      "pred": "CONSIDERED",
+      "ground_truth": "CONSIDERED",
+      "is_correct": true,
+      "snippet": "ole or in part by questions of policy, the duty to act judicially may arise in the companyrse of arriving at that decision. Thus, if in order to arrive at the d"
+    },
+    {
+      "id": 93,
+      "case_id": "1963_207",
+      "citation": "AIR 1961 S.C. 493",
+      "pred": "CONSIDERED",
+      "ground_truth": "CONSIDERED",
+      "is_correct": true,
+      "snippet": ", is that r. 3.26 d of the 1959 rules is number applicable to him and that if it be applicable, his case is number companyered by the terms of that rule. The ap"
+    },
+    {
+      "id": 94,
+      "case_id": "1974_146",
+      "citation": "1975 1 S.C.R. 1",
+      "pred": "CONSIDERED",
+      "ground_truth": "CONSIDERED",
+      "is_correct": true,
+      "snippet": "nish materially the value, or impair substantially the utility, of the premises or otherwise acted in Contravention of any of the terms, express or implied, und"
+    },
+    {
+      "id": 95,
+      "case_id": "1963_93",
+      "citation": "1955 1 S.C.R 707",
+      "pred": "CONSIDERED",
+      "ground_truth": "CONSIDERED",
+      "is_correct": true,
+      "snippet": "ing a tax on carriage it becomes an unreasonable restriction if the tax did number vary with the distance over which the thing was carried. Put that way, it wou"
+    },
+    {
+      "id": 96,
+      "case_id": "1976_257",
+      "citation": "1971 2 S.C.R. 191",
+      "pred": "CONSIDERED",
+      "ground_truth": "CONSIDERED",
+      "is_correct": true,
+      "snippet": "luence the Government to take action under the express or implied terms of the companytract of employment or under the statutory rule, nevertheless if a right e"
+    },
+    {
+      "id": 97,
+      "case_id": "1969_163",
+      "citation": "1957 S.C.R. 370",
+      "pred": "CONSIDERED",
+      "ground_truth": "CONSIDERED",
+      "is_correct": true,
+      "snippet": "rised by the learned Judge at page 392 as follows Under s. 83 3  the Tribunal has power to allow particulars in respect of illegal or companyrupt prac-  1  1936"
+    },
+    {
+      "id": 98,
+      "case_id": "1972_218",
+      "citation": "1960 3 S.C.R. 476",
+      "pred": "CONSIDERED",
+      "ground_truth": "CONSIDERED",
+      "is_correct": true,
+      "snippet": "t employment in stone-breaking or stone-crushing would refer to quarry operation this Court was fully alive to the process involved in quarrying operation. That"
+    },
+    {
+      "id": 99,
+      "case_id": "1962_273",
+      "citation": "1955 1 S.C.R. 735",
+      "pred": "CONSIDERED",
+      "ground_truth": "CONSIDERED",
+      "is_correct": true,
+      "snippet": "appropriate Government to add to the Schedule any employment in respect of which it was of the opinion that minimum wages should be fixed. Those provisions were"
+    },
+    {
+      "id": 100,
+      "case_id": "1971_641",
+      "citation": "1965 3 S.C.R. 588",
+      "pred": "CONSIDERED",
+      "ground_truth": "CONSIDERED",
+      "is_correct": true,
+      "snippet": "ion by both the parties to the Govt. and the Govt. referred the question to the Tribunal. In the numberice given by the Respondents it was stated that the go sl"
+    }
+  ]
+}

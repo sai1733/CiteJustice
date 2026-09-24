@@ -44,6 +44,9 @@ data/clean/*
 !data/clean/.gitkeep
 data/processed/*
 !data/processed/.gitkeep
+!data/processed/annotated_100_edges.json
+!data/processed/validation_100_edges.json
+!data/processed/outcome_validation_200.json
 data/graph/*.graphml
 data/graph/*.csv
 data/graph/*.json
