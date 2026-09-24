@@ -69,8 +69,10 @@ def assign_temporal_era(year: int) -> str:
         return "1950-1975 (Era 1: Foundational)"
     elif year <= 2000:
         return "1976-2000 (Era 2: Basic Structure & PIL)"
-    else:
+    elif year <= 2020:
         return "2001-2020 (Era 3: Modern Regulatory)"
+    else:
+        return "2021-2024 (Era 4: Post-COVID & Digital Courts)"
 
 def load_case_metadata(dataset: str) -> dict:
     """Loads case metadata (year, label, split) from segmented JSONL files."""
@@ -82,6 +84,10 @@ def load_case_metadata(dataset: str) -> dict:
             sources.append(p)
     if dataset in ["multi", "combined"]:
         p = CLEAN_DIR / "ildc_multi_segmented.jsonl"
+        if p.exists():
+            sources.append(p)
+    if dataset in ["nyaya", "combined"]:
+        p = CLEAN_DIR / "nyaya_2021_2024_segmented.jsonl"
         if p.exists():
             sources.append(p)
 
@@ -124,6 +130,10 @@ def build_graph(dataset: str = "combined", sample_size: int = None):
             edge_sources.append(p)
     if dataset in ["multi", "combined"]:
         p = CLEAN_DIR / "ildc_multi_classified_edges.jsonl"
+        if p.exists():
+            edge_sources.append(p)
+    if dataset in ["nyaya", "combined"]:
+        p = CLEAN_DIR / "nyaya_2021_2024_classified_edges.jsonl"
         if p.exists():
             edge_sources.append(p)
 

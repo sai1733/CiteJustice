@@ -38,9 +38,9 @@ def build_citation_resolution_table():
     print(f"Target Output Directory: {GRAPH_DIR}")
     print("=" * 70)
 
-    # 1. Collect all known internal ILDC case IDs
+    # 1. Collect all known internal ILDC and Nyaya case IDs
     internal_case_ids = set()
-    for fname in ["ildc_single_segmented.jsonl", "ildc_multi_segmented.jsonl"]:
+    for fname in ["ildc_single_segmented.jsonl", "ildc_multi_segmented.jsonl", "nyaya_2021_2024_segmented.jsonl"]:
         p = CLEAN_DIR / fname
         if p.exists():
             print(f"Indexing internal case IDs from: {fname}...")
@@ -53,12 +53,13 @@ def build_citation_resolution_table():
                     if cid:
                         internal_case_ids.add(cid)
 
-    print(f"Total unique internal ILDC case IDs indexed: {len(internal_case_ids):,}\n")
+    print(f"Total unique internal case IDs indexed: {len(internal_case_ids):,}\n")
 
-    # 2. Load classified edges from single and multi
+    # 2. Load classified edges from single, multi, and nyaya 2021-2024
     classified_edge_sources = [
         CLEAN_DIR / "ildc_single_classified_edges.jsonl",
-        CLEAN_DIR / "ildc_multi_classified_edges.jsonl"
+        CLEAN_DIR / "ildc_multi_classified_edges.jsonl",
+        CLEAN_DIR / "nyaya_2021_2024_classified_edges.jsonl"
     ]
 
     all_edges = []

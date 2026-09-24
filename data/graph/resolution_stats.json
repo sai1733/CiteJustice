@@ -1,9 +1,9 @@
 {
-  "total_citation_edges": 92058,
-  "resolved_to_internal_case": 36838,
-  "unresolved_external_precedents": 55220,
-  "edge_resolution_rate_percent": 40.02,
-  "unique_citation_spans": 29846,
-  "unique_citations_resolved": 12953,
-  "unique_citation_resolution_percent": 43.4
+  "total_citation_edges": 94672,
+  "resolved_to_internal_case": 38178,
+  "unresolved_external_precedents": 56494,
+  "edge_resolution_rate_percent": 40.33,
+  "unique_citation_spans": 30646,
+  "unique_citations_resolved": 13325,
+  "unique_citation_resolution_percent": 43.48
 }
