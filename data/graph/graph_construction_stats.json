@@ -1,0 +1,38 @@
+{
+  "timestamp": "2026-09-25 17:31:21",
+  "graph_type": "MultiDiGraph",
+  "total_nodes": 66671,
+  "internal_case_nodes": 36025,
+  "cited_precedent_nodes": 30646,
+  "total_directed_edges": 81911,
+  "graph_density": 1.843e-05,
+  "isolated_nodes_count": 21301,
+  "isolated_nodes_pct": 31.95,
+  "mean_in_degree": 1.23,
+  "median_in_degree": 0.0,
+  "max_in_degree": 172,
+  "mean_out_degree": 1.23,
+  "median_out_degree": 0.0,
+  "max_out_degree": 377,
+  "pyg_tensor_shapes": {
+    "edge_index": [
+      2,
+      94672
+    ],
+    "edge_weight": [
+      94672
+    ],
+    "edge_type": [
+      94672
+    ],
+    "node_labels": [
+      66671
+    ]
+  },
+  "relationship_counts": {
+    "CONSIDERED": 87215,
+    "DISTINGUISHED": 3287,
+    "FOLLOWED": 2235,
+    "OVERRULED": 1935
+  }
+}
