@@ -2,7 +2,7 @@
 
 **Project:** CiteJustice — Automated Legal Judgment Prediction & Dynamic Precedent Evolution Graph for Indian Courts  
 **Milestone:** Week 4 — Task 2: Temporal Consistency & Causal Graph Validation  
-**Authors:** Sai Sonawane (Graph Engineering Lead) & Madhav Rakhonde (Legal Research Lead)  
+**Author:** Sai Sonawane (Computer Engineering Lead)  
 **Institution:** Vidya Pratishthan's Kamalnayan Bajaj Institute of Engineering and Technology (VPKBIET), Baramati  
 **Date:** September 25, 2026  
 **Status:** **PASSED & VALIDATED** (98.31% Causal Arrow of Time Compliance; Overruled Budget = 2.04%)

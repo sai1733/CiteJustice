@@ -2,7 +2,7 @@
 scripts/graph/build_graph.py
 
 Week 4 - Task 3: Production Graph Construction & Dual Exporter
-Author: Sai Sonawane (Graph Engineering Lead) & Madhav Rakhonde (Legal Research Lead)
+Author: Sai Sonawane (Computer Engineering Lead)
 Institution: VPKBIET, Baramati
 
 Outputs:

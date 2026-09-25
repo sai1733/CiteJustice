@@ -2,7 +2,7 @@
 scripts/graph/build_nodes.py
 
 Week 4 - Task 1: Master Case Node Builder & Dataset Assembler
-Author: Sai Sonawane (Graph Engineering Lead) & Madhav Rakhonde (Legal Research Lead)
+Author: Sai Sonawane (Computer Engineering Lead)
 Institution: VPKBIET, Baramati
 
 Produces:

@@ -2,7 +2,7 @@
 scripts/graph/validate_temporal_graph.py
 
 Week 4 - Task 2: Temporal Consistency & Causal Graph Validation Pipeline
-Author: Sai Sonawane (Graph Engineering Lead) & Madhav Rakhonde (Legal Research Lead)
+Author: Sai Sonawane (Computer Engineering Lead)
 Institution: VPKBIET, Baramati
 
 Validates:
@@ -150,7 +150,7 @@ def validate_temporal_graph():
 
 **Project:** CiteJustice — Automated Legal Judgment Prediction & Dynamic Precedent Evolution Graph for Indian Courts  
 **Milestone:** Week 4 — Task 2: Temporal Consistency & Causal Graph Validation  
-**Authors:** Sai Sonawane (Graph Engineering Lead) & Madhav Rakhonde (Legal Research Lead)  
+**Author:** Sai Sonawane (Computer Engineering Lead)  
 **Institution:** Vidya Pratishthan's Kamalnayan Bajaj Institute of Engineering and Technology (VPKBIET), Baramati  
 **Date:** {time.strftime('%B %d, %Y')}  
 **Status:** **PASSED & VALIDATED** (98.31% Causal Arrow of Time Compliance; Overruled Budget = 2.04%)
