@@ -60,6 +60,11 @@ data/splits/*
 Thumbs.db
 desktop.ini
 
+# Environment & Secret files
+.env
+.env.local
+*.env
+
 # IDE & Editor files
 .vscode/
 .idea/

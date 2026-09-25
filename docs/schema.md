@@ -1,11 +1,11 @@
 # Interface Specification: Case Node Schema (`cases.json` / `cases.jsonl`)
 
 **Project:** CiteJustice — Automated Legal Judgment Prediction & Dynamic Precedent Evolution Graph (DPEG) for Indian Courts  
-**Artifact:** Data & Model Team Interface Contract (`v1.0.0-frozen`)  
+**Artifact:** Data & Model Team Interface Contract (`v1.1.0-frozen` — Future-Proof High Court & Nyaya 700K Extension)  
 **Authors:** Madhav Rakhonde (Data & Legal Lead), Sai Sonawane (Graph Engineering Lead)  
 **Stakeholders:** Data & Graph Engineering Team $\longleftrightarrow$ Model & Architecture Team  
 **Institution:** Vidya Pratishthan's Kamalnayan Bajaj Institute of Engineering and Technology (VPKBIET), Baramati  
-**Date:** September 24, 2026 (Week 4 Milestone)  
+**Date:** September 25, 2026 (Week 4 Milestone Update)  
 **Status:** **FINALIZED & FROZEN** (Approved by all sub-teams)
 
 ---
@@ -50,6 +50,10 @@ Each entry in `cases.json` represents a single case node $\mathcal{V}_i \in \mat
 | :--- | :--- | :--- | :--- | :--- |
 | **`case_id`** | `string` | **No** | Unique canonical identifier. Matches ILDC/Nyaya ID format (`YYYY_INDEX` or `YYYY_COURT_NUM`). | `"2014_INSC_170"` |
 | **`court`** | `string` | **No** | Full formal name of the adjudicating court. | `"Supreme Court of India"` |
+| **`court_tier`** | `string` | **No** | Hierarchical authority tier (`"APEX"`, `"HIGH_COURT"`, `"TRIBUNAL"`, `"DISTRICT"`). Enables jurisdictional GNN edge weighting. | `"APEX"` |
+| **`jurisdiction`** | `string` | **No** | Territorial or constitutional jurisdiction (`"CENTRAL"` or state slug e.g. `"DELHI"`, `"MAHARASHTRA"`). | `"CENTRAL"` |
+| **`matter_type`** | `string` | Yes | Legal domain categorization (`"CRIMINAL"`, `"CIVIL"`, `"CONSTITUTIONAL"`, `"TAXATION"`, `"LABOR"`). Nullable. | `"CRIMINAL"` |
+| **`dataset_source`** | `string` | **No** | Provenance corpus tracker (`"ILDC_SINGLE"`, `"ILDC_MULTI"`, `"NYAYA_2020_2024"`, `"NYAYA_700K"`). | `"ILDC_SINGLE"` |
 | **`year`** | `integer` | **No** | Decision year ($1950 \le \text{year} \le 2026$). | `2014` |
 | **`decision_date`** | `string` | Yes | ISO 8601 calendar date (`YYYY-MM-DD`). | `"2014-04-16"` |
 | **`bench_size`** | `integer` | **No** | Number of presiding judges on the bench ($\ge 1$). | `2` |
@@ -141,6 +145,10 @@ Ground-truth target variables for classification:
 {
   "case_id": "2014_INSC_170",
   "court": "Supreme Court of India",
+  "court_tier": "APEX",
+  "jurisdiction": "CENTRAL",
+  "matter_type": "CRIMINAL",
+  "dataset_source": "ILDC_SINGLE",
   "year": 2014,
   "decision_date": "2014-03-07",
   "bench_size": 2,
@@ -229,6 +237,10 @@ Ground-truth target variables for classification:
   "properties": {
     "case_id": { "type": "string", "pattern": "^[0-9]{4}_[A-Za-z0-9_]+$" },
     "court": { "type": "string" },
+    "court_tier": { "type": "string", "enum": ["APEX", "HIGH_COURT", "TRIBUNAL", "DISTRICT"] },
+    "jurisdiction": { "type": "string" },
+    "matter_type": { "type": ["string", "null"], "enum": ["CRIMINAL", "CIVIL", "CONSTITUTIONAL", "TAXATION", "LABOR", null] },
+    "dataset_source": { "type": "string" },
     "year": { "type": "integer", "minimum": 1950, "maximum": 2026 },
     "decision_date": { "type": ["string", "null"], "format": "date" },
     "bench_size": { "type": "integer", "minimum": 1, "maximum": 15 },
@@ -361,6 +373,10 @@ class OutcomeData(BaseModel):
 class CaseNodeSchema(BaseModel):
     case_id: str
     court: str
+    court_tier: Literal["APEX", "HIGH_COURT", "TRIBUNAL", "DISTRICT"] = "APEX"
+    jurisdiction: str = "CENTRAL"
+    matter_type: Optional[Literal["CRIMINAL", "CIVIL", "CONSTITUTIONAL", "TAXATION", "LABOR"]] = None
+    dataset_source: str = "ILDC_SINGLE"
     year: int = Field(ge=1950, le=2026)
     decision_date: Optional[str] = None
     bench_size: int = Field(ge=1)
