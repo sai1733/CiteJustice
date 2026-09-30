@@ -85,6 +85,7 @@ def build_production_graph():
                 d = json.loads(line)
                 cid = d["case_id"]
                 internal_case_meta[cid] = {
+                    "split": d.get("split", "train"),
                     "court_tier": d.get("court_tier", "APEX"),
                     "matter_type": d.get("matter_type") or "UNKNOWN",
                     "section_count": d.get("statutory_entities", {}).get("section_count", 0),
@@ -92,7 +93,7 @@ def build_production_graph():
                     "binary_label": d.get("outcome", {}).get("binary_label", -1),
                     "char_count": d.get("text_features", {}).get("char_count", 0)
                 }
-        print(f"  ? Enriched {len(internal_case_meta):,} internal case nodes.")
+        print(f"  [OK] Enriched {len(internal_case_meta):,} internal case nodes.")
 
     G = nx.MultiDiGraph()
     node_id_to_idx = {}
@@ -106,7 +107,13 @@ def build_production_graph():
         cid = str(row["node_id"])
         ntype = str(row["node_type"])
         year = int(row["year"]) if pd.notna(row["year"]) and str(row["year"]).isdigit() else 2000
-        split = str(row["split"]) if pd.notna(row["split"]) else "precedent"
+        
+        # Prefer split from cases.jsonl if available, else from dpeg_combined_nodes.csv
+        if cid in internal_case_meta:
+            split = internal_case_meta[cid]["split"]
+        else:
+            split = str(row["split"]) if pd.notna(row["split"]) else "precedent"
+            
         lbl = int(row["label"]) if pd.notna(row["label"]) and str(row["label"]).isdigit() else -1
 
         node_id_to_idx[cid] = idx
@@ -139,7 +146,7 @@ def build_production_graph():
 
         G.add_node(cid, **node_attrs)
 
-    print(f"  ? Added {G.number_of_nodes():,} nodes to NetworkX MultiDiGraph.")
+    print(f"  [OK] Added {G.number_of_nodes():,} nodes to NetworkX MultiDiGraph.")
 
     # ----------------------------------------------------------------------
     # 2. Load Edges & Build Tensors

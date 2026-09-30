@@ -50,6 +50,7 @@ data/processed/*
 data/graph/*.graphml
 data/graph/*.csv
 data/graph/*.json
+data/graph/*.npz
 !data/graph/resolution_stats.json
 !data/graph/graph_construction_stats.json
 !data/graph/.gitkeep
